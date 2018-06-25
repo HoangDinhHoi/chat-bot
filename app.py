@@ -4,9 +4,9 @@ from os import environ
 from aiohttp import web
 
 # fanpage token
-PAGE_ACCESS_TOKEN = ''
+PAGE_ACCESS_TOKEN = 'EAACtUPHBoJMBAC4XfAUl7VTN8hZAZAzh9W5O6VgqdQDEbkMDflUmxjQwSQOrX9ADfZBVv6jCVt2NGRwH4pmY57X6fPzqt6WrNSGmCIEPcUfxZCpfs4ZARdIZApBKjngWDsCOJbcaSnEAgrN1L81urkIvJCbuhUoZCfq8CwS3ZCvMKBQ7YWhrVvqe'
 # verify token
-VERIFY_TOKEN = ''
+VERIFY_TOKEN = 'Vm>@d(y26Ek/Q]G<'
 
 class BotControl(web.View):
 
