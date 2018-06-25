@@ -39,11 +39,11 @@ class BotControl(web.View):
                         elif any(["tác giả" in message_text.lower(), "người viết" in message_text.lower(),
                                 "ai viết" in message_text.lower(), "ba mày" in message_text.lower(), "cha mày" in message_text.lower()
                                      , "bố mày" in message_text.lower(), "tía mày" in message_text.lower()]):
-                            await self.send_message(sender_id, "ahihi bạn vào đây để xem ai là người tạo ra mình nha :3 https://www.hocpython.com")
+                            await self.send_message(sender_id, "ahihi. Đừng chửi bậy như vậy chứ :))")
                         else:
-                            await self.send_message(sender_id, "Bạn dễ thương gì ấy ơi, ghé https://www.hocpython.com để ủng hộ ba mình nha :3 ")
+                            await self.send_message(sender_id, "Bạn dễ thương gì ấy ơi. Vào đây để kết bạn với mình nha: https://www.facebook.com/hoihandsome ")
                             await self.send_message(sender_id,
-                                              "mình nghe ba mình nói nếu mình được 100 like sẽ chia sẻ với các bạn thêm tính năng mới của mình đó :3")
+                                              "mình nghe ba mình nói nếu bạn like page này của mình thì bạn sẽ trở nên đẹp nhất thế giới đó :))")
 
         return web.Response(text='ok', status=200)
 
