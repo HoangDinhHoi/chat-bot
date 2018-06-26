@@ -36,12 +36,22 @@ class BotControl(web.View):
                         elif any(["bạn tên" in message_text.lower(), "mày tên" in message_text.lower(),
                                 "your name" in message_text.lower(), "cậu tên" in message_text.lower()]):
                             await self.send_message(sender_id, "mình tên là bot demo aiohttp nha")
+                        elif any(["thực đơn" in message_text.lower(), "menu" in message_text.lower(),
+                                  "danh sách" in message_text.lower(), "cho mình hỏi" in message_text.lower(),]):
+                            await self.send_message(sender_id, "mình hiện tại chưa có thực đơn hay là đại loại như thế, mình sẽ cập nhật sau. ahihi ^^")
+
                         elif any(["tác giả" in message_text.lower(), "người viết" in message_text.lower(),
                                 "ai viết" in message_text.lower(), "ba mày" in message_text.lower(), "cha mày" in message_text.lower()
                                      , "bố mày" in message_text.lower(), "tía mày" in message_text.lower()]):
-                            await self.send_message(sender_id, "ahihi. Đừng chửi bậy như vậy chứ :))")
-                        else:
+                            await self.send_message(sender_id, "ahihi. Đừng chửi bậy như vậy chứ :)). mình tạo ra cái này cho vui ấy mà ^^")
+                        elif any(["cứu giúp" in message_text.lower(), "help" in message_text.lower(), "trợ giúp" in message_text.lower(),
+                                  "giúp mình" in message_text.lower(), "hài" in message_text.lower(), "tài thật" in message_text.lower()]):
                             await self.send_message(sender_id, "Bạn dễ thương gì ấy ơi. Vào đây để kết bạn với mình nha: https://www.facebook.com/hoihandsome ")
+                        elif any(["wtf" in message_text.lower(), "dmm" in message_text.lower(), "đm" in message_text.lower(),
+                                  "đmm" in message_text.lower(), "định mệnh" in message_text.lower(), "mẹ mày" in message_text.lower(),
+                                  "fuck you" in message_text.lower()]):
+                            await self.send_message(sender_id, "Bạn mà chửi mình nữa là mình chửi lại đó ^^ không đùa đâu")
+                        else:
                             await self.send_message(sender_id,
                                               "mình nghe ba mình nói nếu bạn like page này của mình thì bạn sẽ trở nên đẹp nhất thế giới đó :))")
 
