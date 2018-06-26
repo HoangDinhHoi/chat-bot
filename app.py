@@ -58,8 +58,7 @@ class BotControl(web.View):
                                   "fuck you" in message_text.lower()]):
                             await self.send_message(sender_id, "Bạn mà chửi mình nữa là mình chửi lại đó ^^ không đùa đâu")
                         else:
-                            await self.send_message(sender_id,
-                                              "Mình nghe ba mình nói nếu bạn like page này của mình thì bạn sẽ trở nên đẹp nhất thế giới đó.")
+                            await self.send_message(sender_id, "Mình nghe ba mình nói nếu bạn like page này của mình thì bạn sẽ trở nên đẹp nhất thế giới đó.")
 
         return web.Response(text='ok', status=200)
 
