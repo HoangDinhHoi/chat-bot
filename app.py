@@ -33,19 +33,25 @@ class BotControl(web.View):
                                 "hello" in message_text.lower(), "có ai" in message_text.lower(),
                                 "có ở đó" in message_text.lower(), "hi" == message_text.lower()]):
                             await self.send_message(sender_id, "chào đằng ấy :)")
+                        elif any(["thông tin" in message_text.lower(), "người viết" in message_text.lower(),
+                                  "ở đâu" in message_text.lower(), "tuổi" in message_text.lower()]):
+                            await self.send_message(sender_id, "mình tên là Hợi handsome/n năm nay mình 24 tuổi/n mình đang học Bách Khoa nha/n Cảm ơn đã like page của mình")
                         elif any(["bạn tên" in message_text.lower(), "mày tên" in message_text.lower(),
                                 "your name" in message_text.lower(), "cậu tên" in message_text.lower()]):
                             await self.send_message(sender_id, "mình tên là bot demo aiohttp nha")
                         elif any(["thực đơn" in message_text.lower(), "menu" in message_text.lower(),
                                   "danh sách" in message_text.lower(), "cho mình hỏi" in message_text.lower(),]):
-                            await self.send_message(sender_id, "mình hiện tại chưa có thực đơn hay là đại loại như thế, mình sẽ cập nhật sau. ahihi ^^")
+                            await self.send_message(sender_id, "hiện tại mình đang kinh doanh về trà giải rượu và thực phẩm chống lười ăn cho bé, cặp chống")
+                            await self.send_message(sender_id, "gù lưng của Nhật")
+                            await self.send_message(sender_id,"bạn vào đây để mua hàng Nhật nhé: https://www.facebook.com/japanshop28895/")
 
                         elif any(["tác giả" in message_text.lower(), "người viết" in message_text.lower(),
                                 "ai viết" in message_text.lower(), "ba mày" in message_text.lower(), "cha mày" in message_text.lower()
                                      , "bố mày" in message_text.lower(), "tía mày" in message_text.lower()]):
                             await self.send_message(sender_id, "ahihi. Đừng chửi bậy như vậy chứ :)). mình tạo ra cái này cho vui ấy mà ^^")
                         elif any(["cứu giúp" in message_text.lower(), "help" in message_text.lower(), "trợ giúp" in message_text.lower(),
-                                  "giúp mình" in message_text.lower(), "hài" in message_text.lower(), "tài thật" in message_text.lower()]):
+                                  "giúp mình" in message_text.lower(), "hài" in message_text.lower(), "tài thật" in message_text.lower()],
+                                 "giúp" in message_text.lower(), "nhờ" in message_text.lower(), "nhờ chút" in message_text.lower()):
                             await self.send_message(sender_id, "Bạn dễ thương gì ấy ơi. Vào đây để kết bạn với mình nha: https://www.facebook.com/hoihandsome ")
                         elif any(["wtf" in message_text.lower(), "dmm" in message_text.lower(), "đm" in message_text.lower(),
                                   "đmm" in message_text.lower(), "định mệnh" in message_text.lower(), "mẹ mày" in message_text.lower(),
