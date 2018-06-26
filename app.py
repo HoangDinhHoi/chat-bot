@@ -41,9 +41,7 @@ class BotControl(web.View):
                             await self.send_message(sender_id, "mình tên là bot demo aiohttp nha")
                         elif any(["thực đơn" in message_text.lower(), "menu" in message_text.lower(),
                                   "danh sách" in message_text.lower(), "cho mình hỏi" in message_text.lower(),]):
-                            await self.send_message(sender_id, "Hiện tại mình đang kinh doanh về trà giải rượu và thực phẩm chống lười ăn cho bé, cặp chống")
-                            await self.send_message(sender_id, "gù lưng của Nhật")
-                            await self.send_message(sender_id,"Bạn vào đây để mua hàng Nhật nhé: https://www.facebook.com/japanshop28895/")
+                            await self.send_message(sender_id,"Bạn vào đây để mua trà giải rượu, cặp chống gù lưng cửa Nhật nhé: https://www.facebook.com/japanshop28895/")
 
                         elif any(["tác giả" in message_text.lower(), "người viết" in message_text.lower(),
                                 "ai viết" in message_text.lower(), "ba mày" in message_text.lower(), "cha mày" in message_text.lower()
